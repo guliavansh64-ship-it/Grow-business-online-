@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 64" width="320" height="64" role="img" aria-label="GrowBusiness Online">
+  <defs><linearGradient id="l" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#6D5EF6"/><stop offset="1" stop-color="#0EA5E9"/></linearGradient></defs>
+  <rect width="56" height="56" x="0" y="4" rx="16" fill="url(#l)"/>
+  <path d="M12 44c8-18 18-27 32-27" stroke="#fff" stroke-width="6" fill="none" stroke-linecap="round"/>
+  <path d="M33 17h11v11" stroke="#fff" stroke-width="6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="70" y="34" font-family="Inter, Segoe UI, Helvetica, Arial, sans-serif" font-size="24" font-weight="800" fill="currentColor">GrowBusiness</text>
+  <text x="70" y="54" font-family="Inter, Segoe UI, Helvetica, Arial, sans-serif" font-size="15" font-weight="600" fill="currentColor" opacity="0.65">ONLINE</text>
+</svg>

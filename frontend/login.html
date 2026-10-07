@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"/>
+<title>Login — Vendor, Customer &amp; Admin | GrowBusiness Online</title>
+<meta name="description" content="Sign in to your GrowBusiness Online store dashboard, customer account or platform console."/>
+<meta name="author" content="GrowBusiness Online"/>
+<meta name="theme-color" content="#6D5EF6"/>
+<meta name="robots" content="noindex,follow"/>
+<link rel="canonical" href="https://www.growbusinessonline.com/login.html"/>
+
+<!-- Open Graph / Twitter -->
+<meta property="og:site_name" content="GrowBusiness Online"/>
+<meta property="og:type" content="website"/>
+<meta property="og:title" content="Login — Vendor, Customer &amp; Admin | GrowBusiness Online"/>
+<meta property="og:description" content="Sign in to your GrowBusiness Online store dashboard, customer account or platform console."/>
+<meta property="og:url" content="https://www.growbusinessonline.com/login.html"/>
+<meta property="og:image" content="https://www.growbusinessonline.com/assets/images/og-cover.svg"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:title" content="Login — Vendor, Customer &amp; Admin | GrowBusiness Online"/>
+<meta name="twitter:description" content="Sign in to your GrowBusiness Online store dashboard, customer account or platform console."/>
+<meta name="twitter:image" content="https://www.growbusinessonline.com/assets/images/og-cover.svg"/>
+
+<!-- Icons -->
+<link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml"/>
+<link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.svg"/>
+
+<!-- Fonts: Inter for UI, Sora for display. System fallbacks keep it fast offline. -->
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Sora:wght@600;700;800&display=swap"/>
+
+<!-- Styles -->
+<link rel="stylesheet" href="css/global.css"/>
+<link rel="stylesheet" href="css/components.css"/>
+<link rel="stylesheet" href="css/site.css"/>
+<link rel="stylesheet" href="css/storefront.css"/>
+<link rel="stylesheet" href="css/dashboard.css"/>
+<link rel="stylesheet" href="css/responsive.css"/>
+
+<!-- Paint the saved theme before first render so there is no flash -->
+<script>
+  (function () {
+    try {
+      var t = localStorage.getItem('gbo:theme');
+      if (!t) t = 'light';
+      if (t === 'auto') t = matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      document.documentElement.dataset.theme = t;
+    } catch (e) {}
+  })();
+</script>
+
+</head>
+<body class="auth-body">
+<a class="skip-link" href="#main">Skip to content</a>
+
+  <div class="auth-page">
+    <aside class="auth-side">
+      <a class="brand" href="index.html">
+        <span class="brand-mark"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><use href="#i-trending-up"/></svg></span>
+        <span class="brand-text"><strong>GrowBusiness</strong><small>Online</small></span>
+      </a>
+
+  <div>
+    <h2>Your business, online in 48 hours</h2>
+    <p>One refundable deposit. No monthly fee. Your own storefront, dashboard and payouts.</p>
+    <ul class="auth-points">
+      <li><span class="ico"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><use href="#i-store"/></svg></span><span>Your own subdomain storefront</span></li>
+      <li><span class="ico"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><use href="#i-package"/></svg></span><span>Unlimited products and categories</span></li>
+      <li><span class="ico"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><use href="#i-credit"/></svg></span><span>UPI, cards, net banking and COD</span></li>
+      <li><span class="ico"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><use href="#i-chart-line"/></svg></span><span>Sales analytics and payouts</span></li>
+    </ul>
+  </div>
+      <a class="auth-quote" href="index.html">
+        <p>← Back to the website</p>
+        <div class="who">Vendor, customer and admin sign in</div>
+      </a>
+    </aside>
+    <main class="auth-main" id="main">
+    <div class="auth-card">
+      <div class="auth-head">
+        <h1>Welcome back</h1>
+        <p>Sign in to manage your store, track an order or reach the platform console.</p>
+      </div>
+      <form class="stack" data-login-form novalidate>
+        <div class="hidden" data-form-error role="alert"></div>
+        <div class="field" data-field="identifier">
+          <label class="label" for="li-id">Email or mobile number</label>
+          <div class="input-group"><svg class="ico" viewBox="0 0 24 24" fill="none" aria-hidden="true"><use href="#i-mail"/></svg><input class="input" id="li-id" name="identifier" type="text" autocomplete="username" placeholder="you@example.com" data-autofocus/></div>
+          <span class="error-text" data-error></span>
+        </div>
+        <div class="field" data-field="password">
+          <div class="row row-between"><label class="label" for="li-pw">Password</label><a class="link-btn text-sm" href="forgot-password.html">Forgot password?</a></div>
+          <div class="input-group"><svg class="ico" viewBox="0 0 24 24" fill="none" aria-hidden="true"><use href="#i-lock"/></svg><input class="input" id="li-pw" name="password" type="password" autocomplete="current-password" placeholder="Your password"/><button type="button" class="suffix icon-btn ghost" data-toggle-password aria-label="Show password"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><use href="#i-eye"/></svg></button></div>
+          <span class="error-text" data-error></span>
+        </div>
+        <label class="check"><input type="checkbox" name="remember" checked/><span class="box"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><use href="#i-check"/></svg></span><span class="text">Keep me signed in on this device</span></label>
+        <button type="submit" class="btn btn-primary btn-lg btn-block" data-label="Signing in">Sign in</button>
+      </form>
+      <p class="auth-foot">New to GrowBusiness Online? <a href="register.html">Create your store</a></p>
+      <div data-demo-accounts></div>
+    </div></main>
+  </div>
+<script type="module" src="js/boot.js" data-page="login"></script>
+</body>
+</html>

@@ -1,0 +1,10 @@
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /vendor/cart.html
+Disallow: /vendor/checkout.html
+Disallow: /vendor/account.html
+Disallow: /deposit.html
+Disallow: /activation.html
+
+Sitemap: https://www.growbusinessonline.com/sitemap.xml

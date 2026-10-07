@@ -1,0 +1,34 @@
+# Dependencies
+node_modules/
+**/node_modules/
+
+# Environment — never commit real secrets (spec §28)
+.env
+.env.local
+.env.production
+backend/.env
+
+# Local database file. `npm run seed` regenerates it in seconds, and a live
+# deployment must never overwrite its own data on deploy.
+backend/data/db.json
+backend/data/*.log
+
+# Build / tooling output
+dist/
+build/
+coverage/
+.cache/
+*.tsbuildinfo
+
+# OS + editor noise
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/*
+!.vscode/extensions.json
+*.swp
+
+# Logs
+logs/
+*.log
+npm-debug.log*

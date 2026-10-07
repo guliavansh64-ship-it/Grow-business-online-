@@ -1,0 +1,536 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"/>
+<title>GrowBusiness Online — Create Your Online Store, Manage Orders &amp; Grow</title>
+<meta name="description" content="Create your own online store on your own subdomain. Manage products, orders, customers and payments from one dashboard. ₹1,000 refundable deposit, no monthly fee, 5% commission on delivered orders."/>
+<meta name="author" content="GrowBusiness Online"/>
+<meta name="theme-color" content="#6D5EF6"/>
+<meta name="robots" content="index,follow"/>
+<link rel="canonical" href="https://www.growbusinessonline.com/"/>
+
+<!-- Open Graph / Twitter -->
+<meta property="og:site_name" content="GrowBusiness Online"/>
+<meta property="og:type" content="website"/>
+<meta property="og:title" content="GrowBusiness Online — Create Your Online Store, Manage Orders &amp; Grow"/>
+<meta property="og:description" content="Create your own online store on your own subdomain. Manage products, orders, customers and payments from one dashboard. ₹1,000 refundable deposit, no monthly fee, 5% commission on delivered orders."/>
+<meta property="og:url" content="https://www.growbusinessonline.com/"/>
+<meta property="og:image" content="https://www.growbusinessonline.com/assets/images/og-cover.svg"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:title" content="GrowBusiness Online — Create Your Online Store, Manage Orders &amp; Grow"/>
+<meta name="twitter:description" content="Create your own online store on your own subdomain. Manage products, orders, customers and payments from one dashboard. ₹1,000 refundable deposit, no monthly fee, 5% commission on delivered orders."/>
+<meta name="twitter:image" content="https://www.growbusinessonline.com/assets/images/og-cover.svg"/>
+
+<!-- Icons -->
+<link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml"/>
+<link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.svg"/>
+
+<!-- Fonts: Inter for UI, Sora for display. System fallbacks keep it fast offline. -->
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Sora:wght@600;700;800&display=swap"/>
+
+<!-- Styles -->
+<link rel="stylesheet" href="css/global.css"/>
+<link rel="stylesheet" href="css/components.css"/>
+<link rel="stylesheet" href="css/site.css"/>
+<link rel="stylesheet" href="css/storefront.css"/>
+<link rel="stylesheet" href="css/dashboard.css"/>
+<link rel="stylesheet" href="css/responsive.css"/>
+
+<!-- Paint the saved theme before first render so there is no flash -->
+<script>
+  (function () {
+    try {
+      var t = localStorage.getItem('gbo:theme');
+      if (!t) t = 'light';
+      if (t === 'auto') t = matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      document.documentElement.dataset.theme = t;
+    } catch (e) {}
+  })();
+</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"GrowBusiness Online","url":"https://www.growbusinessonline.com","logo":"https://www.growbusinessonline.com/assets/images/logos/growbusiness.svg","description":"Multi-vendor commerce platform for Indian small businesses.","address":{"@type":"PostalAddress","streetAddress":"Sector 14","addressLocality":"Jhajjar","addressRegion":"Haryana","postalCode":"124103","addressCountry":"IN"},"contactPoint":{"@type":"ContactPoint","telephone":"+91-90000-00001","contactType":"customer support","email":"support@growbusinessonline.com","availableLanguage":["en","hi"]},"sameAs":[]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Product","name":"GrowBusiness Online vendor store","description":"Online storefront with product, order, customer and payment management.","offers":{"@type":"Offer","priceCurrency":"INR","price":"1000","description":"One-time refundable security deposit. 5% commission on delivered orders.","availability":"https://schema.org/InStock"}}</script>
+</head>
+<body class="">
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header" data-site-header>
+  <div class="container container-wide header-inner">
+    <a class="brand" href="index.html" aria-label="GrowBusiness Online home">
+      <span class="brand-mark"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 17.5 9.2 12l3.4 3.4L20 7.6" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/><path d="M15 7.6h5v5" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+      <span class="brand-text"><strong>GrowBusiness</strong><small>Online</small></span>
+    </a>
+
+    <nav class="main-nav" aria-label="Main navigation">
+      <a class="nav-link" data-nav-link href="index.html">Home</a>
+      <a class="nav-link" data-nav-link href="pages/features.html">Features</a>
+      <a class="nav-link" data-nav-link href="pages/pricing.html">Pricing</a>
+      <a class="nav-link" data-nav-link href="pages/how-it-works.html">How It Works</a>
+      <a class="nav-link" data-nav-link href="pages/vendors.html">Vendors</a>
+      <a class="nav-link" data-nav-link href="pages/faq.html">FAQ</a>
+      <a class="nav-link" data-nav-link href="pages/contact.html">Contact</a>
+    </nav>
+
+    <div class="header-actions">
+      <button type="button" class="icon-btn ghost" data-theme-toggle aria-label="Toggle dark mode">
+        <svg class="i-sun" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="4.2" stroke="currentColor" stroke-width="2"/><path d="M12 2.6v2.2M12 19.2v2.2M2.6 12h2.2M19.2 12h2.2M5.4 5.4l1.6 1.6M17 17l1.6 1.6M18.6 5.4 17 7M7 17l-1.6 1.6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      </button>
+      <div class="row" data-account-area><!-- login / register or account chip --></div>
+      <button type="button" class="icon-btn ghost nav-burger" data-nav-toggle aria-label="Open menu" aria-expanded="false" aria-controls="mobile-nav">
+        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="2.1" stroke-linecap="round"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<div class="mobile-nav" id="mobile-nav" data-nav-panel>
+  <div class="container">
+    <a class="mn-link" href="index.html">Home <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="m9 6 6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+    <a class="mn-link" href="pages/features.html">Features <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="m9 6 6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+    <a class="mn-link" href="pages/pricing.html">Pricing <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="m9 6 6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+    <a class="mn-link" href="pages/how-it-works.html">How It Works <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="m9 6 6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+    <a class="mn-link" href="pages/vendors.html">Vendors <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="m9 6 6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+    <a class="mn-link" href="pages/about.html">About <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="m9 6 6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+    <a class="mn-link" href="pages/faq.html">FAQ <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="m9 6 6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+    <a class="mn-link" href="pages/contact.html">Contact <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="m9 6 6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+    <div class="mn-actions" data-account-area-mobile></div>
+    <div class="mn-foot">
+      <a href="pages/terms.html">Terms</a>
+      <a href="pages/privacy.html">Privacy</a>
+      <a href="pages/refund-policy.html">Refund policy</a>
+    </div>
+  </div>
+</div>
+
+<main id="main">
+
+  <section class="hero">
+    <div class="container container-wide hero-inner">
+      <div class="hero-copy">
+        <span class="badge badge-brand reveal"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><use href="#i-sparkles"/></svg> Multi-vendor commerce platform for India</span>
+        <h1 class="reveal">Grow Your Business <span class="grad-text">Online</span></h1>
+        <p class="lede reveal">Create your own online store on your own subdomain. Manage products, orders, customers and payments from one dashboard — and get paid directly into your bank account.</p>
+        <div class="hero-cta reveal">
+          <a class="btn btn-primary btn-lg" href="register.html">
+            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><use href="#i-rocket"/></svg> Start Your Business
+          </a>
+          <a class="btn btn-secondary btn-lg" href="login.html">
+            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><use href="#i-login"/></svg> Login
+          </a>
+        </div>
+        <div class="hero-trust reveal">
+          <span class="t"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><use href="#i-check-circle"/></svg> ₹1,000 refundable deposit</span>
+          <span class="t"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><use href="#i-check-circle"/></svg> No monthly fee</span>
+          <span class="t"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><use href="#i-check-circle"/></svg> Live in 48 hours</span>
+        </div>
+      </div>
+
+  <div class="hero-art reveal">
+    <div class="frame">
+      <img src="assets/images/hero-dashboard.svg" alt="GrowBusiness Online vendor dashboard showing sales, orders and top products" width="760" height="520" fetchpriority="high"/>
+    </div>
+    <div class="float-card fc-1">
+      <span class="ico"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 17.5 9.2 12l3.4 3.4L20 7.6M15 7.6h5v5" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+      <span><span class="v">₹1,24,580</span><span class="l">Sales this month</span></span>
+    </div>
+    <div class="float-card fc-2">
+      <span class="ico"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 7h12l-1.2 9.2a2 2 0 0 1-2 1.8H9.2a2 2 0 0 1-2-1.8L6 7Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M9 7a3 3 0 0 1 6 0" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></span>
+      <span><span class="v">18 new orders</span><span class="l">In the last 24 hours</span></span>
+    </div>
+    <div class="float-card fc-3">
+      <span class="ico"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="m12 3 2.6 5.4 5.9.8-4.3 4.1 1.1 5.9L12 16.9 6.7 19.2l1.1-5.9L3.5 9.2l5.9-.8L12 3Z" stroke="currentColor" stroke-width="1.9" stroke-linejoin="round"/></svg></span>
+      <span><span class="v">4.8 rating</span><span class="l">From 1,240 buyers</span></span>
+    </div>
+  </div>
+    </div>
+  </section>
+
+  <section class="logo-strip">
+    <div class="container container-wide inner">
+      <span class="label">Live stores on the platform</span>
+      <div class="marquee grow" data-marquee-host>
+        <div class="marquee-track" data-marquee>
+          <span class="lg"><img src="assets/images/logos/techmart.svg" alt="" width="30" height="30"/> TechMart</span>
+          <span class="lg"><img src="assets/images/logos/stylehub.svg" alt="" width="30" height="30"/> StyleHub</span>
+          <span class="lg"><img src="assets/images/logos/freshkart.svg" alt="" width="30" height="30"/> FreshKart</span>
+          <span class="lg"><img src="assets/images/logos/homely.svg" alt="" width="30" height="30"/> Homely</span>
+          <span class="lg"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true" width="22" height="22"><use href="#i-store"/></svg> Your store here</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="stats">
+    <div class="container">
+      <div class="section-head center">
+        <span class="eyebrow">Platform numbers</span>
+        <h2>Built for real businesses, not demos</h2>
+        <p class="sub">Live counts from the platform API, refreshed whenever you open this page.</p>
+      </div>
+      <div class="stats-band card card-pad" data-platform-stats>
+        <div class="stat-block"><div class="v brand" data-stat="vendors" data-count-up>0</div><div class="l">Active stores</div></div>
+        <div class="stat-block"><div class="v" data-stat="products" data-count-up>0</div><div class="l">Products listed</div></div>
+        <div class="stat-block"><div class="v" data-stat="orders" data-count-up>0</div><div class="l">Orders processed</div></div>
+        <div class="stat-block"><div class="v" data-stat="cities" data-count-up>0</div><div class="l">Cities delivered</div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt" id="features">
+    <div class="container">
+      <div class="section-head center">
+        <span class="eyebrow">Everything included</span>
+        <h2>One platform. Twelve things you no longer have to do by hand.</h2>
+        <p class="sub">Every feature below is part of the same ₹1,000 refundable deposit — no add-ons, no tiers to unlock.</p>
+      </div>
+      <div class="feature-grid">
+
+  <article class="feature-card reveal">
+    <span class="f-ico"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><use href="#i-store"/></svg></span>
+    <h3>Create Online Store</h3>
+    <p>Your own storefront on vendorname.growbusinessonline.com, live within 48 hours of activation.</p>
+    <span class="f-tag">Included</span>
+  </article>
+  <article class="feature-card reveal">
+    <span class="f-ico"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><use href="#i-package"/></svg></span>
+    <h3>Product Management</h3>
+    <p>Add products with images, prices, MRP, discounts, stock levels, specifications and categories.</p>
+    <span class="f-tag">Unlimited products</span>
+  </article>
+  <article class="feature-card reveal">
+    <span class="f-ico"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><use href="#i-receipt"/></svg></span>
+    <h3>Order Management</h3>
+    <p>Confirm, process, ship and deliver from one queue. Every status change updates the customer.</p>
+    <span class="f-tag">Live tracking</span>
+  </article>
+  <article class="feature-card reveal">
+    <span class="f-ico"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><use href="#i-users"/></svg></span>
+    <h3>Customer Management</h3>
+    <p>See every buyer, their order history, lifetime spend and city — without exporting spreadsheets.</p>
+    <span class="f-tag">Built-in CRM</span>
+  </article>
+  <article class="feature-card reveal">
+    <span class="f-ico"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><use href="#i-grid"/></svg></span>
+    <h3>Vendor Dashboard</h3>
+    <p>A single console for your catalogue, sales, money and store settings, built for daily use.</p>
+    <span class="f-tag">One place</span>
+  </article>
+  <article class="feature-card reveal">
+    <span class="f-ico"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><use href="#i-shield-check"/></svg></span>
+    <h3>Secure Authentication</h3>
+    <p>Hashed passwords, signed sessions, role-based access and rate limiting on every endpoint.</p>
+    <span class="f-tag">Role based</span>
+  </article>
+  <article class="feature-card reveal">
+    <span class="f-ico"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><use href="#i-bell"/></svg></span>
+    <h3>Notifications</h3>
+    <p>New order, order updated, payment received, withdrawal updated, store activated and announcements.</p>
+    <span class="f-tag">In-app + push ready</span>
+  </article>
+  <article class="feature-card reveal">
+    <span class="f-ico"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><use href="#i-chart-line"/></svg></span>
+    <h3>Sales Analytics</h3>
+    <p>Sales, orders, revenue, top products, category mix and delivery cities over 7, 30 or 90 days.</p>
+    <span class="f-tag">Charts included</span>
+  </article>
+  <article class="feature-card reveal">
+    <span class="f-ico"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><use href="#i-credit"/></svg></span>
+    <h3>Payment Management</h3>
+    <p>UPI, cards, net banking and cash on delivery. Balances and payouts tracked to the rupee.</p>
+    <span class="f-tag">5% commission</span>
+  </article>
+  <article class="feature-card reveal">
+    <span class="f-ico"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><use href="#i-globe"/></svg></span>
+    <h3>24/7 Online Store</h3>
+    <p>Your store never closes. Customers can browse and order at 2am and you see it in the morning.</p>
+    <span class="f-tag">Always on</span>
+  </article>
+  <article class="feature-card reveal">
+    <span class="f-ico"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><use href="#i-smartphone"/></svg></span>
+    <h3>Mobile Responsive Store</h3>
+    <p>Every storefront is designed mobile-first and tested from 320px phones to 1440px desktops.</p>
+    <span class="f-tag">Touch friendly</span>
+  </article>
+  <article class="feature-card reveal">
+    <span class="f-ico"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><use href="#i-palette"/></svg></span>
+    <h3>Custom Store Branding</h3>
+    <p>Your logo, banner, colours, tagline and business details — no “powered by” clutter on your pages.</p>
+    <span class="f-tag">Your brand</span>
+  </article>
+      </div>
+      <div class="text-center mt-10">
+        <a class="btn btn-secondary btn-lg" href="pages/features.html">See every feature in detail
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><use href="#i-arrow-right"/></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="how-it-works">
+    <div class="container">
+      <div class="section-head center">
+        <span class="eyebrow">How it works</span>
+        <h2>From registration to your first order in four steps</h2>
+        <p class="sub">No developer, no server setup, no monthly subscription.</p>
+      </div>
+      <div class="how-steps">
+
+  <article class="how-step reveal">
+    <span class="n">1</span>
+    <h3>Register Your Account</h3>
+    <p>Add your business name, type, address and contact details. Your account is created instantly.</p>
+    <span class="arrow"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><use href="#i-arrow-right"/></svg></span>
+  </article>
+  <article class="how-step reveal">
+    <span class="n">2</span>
+    <h3>Pay ₹1,000 Security Deposit</h3>
+    <p>A one-time, fully refundable security deposit. It is returned when you close your store in good standing.</p>
+    <span class="arrow"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><use href="#i-arrow-right"/></svg></span>
+  </article>
+  <article class="how-step reveal">
+    <span class="n">3</span>
+    <h3>Complete Store Setup</h3>
+    <p>Upload your logo, choose your colours, set opening hours and add your first products.</p>
+    <span class="arrow"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><use href="#i-arrow-right"/></svg></span>
+  </article>
+  <article class="how-step reveal">
+    <span class="n">4</span>
+    <h3>Launch Your Online Store</h3>
+    <p>After the 48 hour activation window your store goes live and starts taking orders.</p>
+
+  </article>
+      </div>
+      <div class="flow-note mt-8 reveal">
+        <span class="ico"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><use href="#i-shield-check"/></svg></span>
+        <div>
+          <strong class="ink">The ₹1,000 is a refundable security deposit</strong>
+          <p class="muted text-sm mt-2 mb-0">It is not a fee and it is not a subscription. It is returned in full when you close your store in good standing. The only ongoing charge is a 5% commission on delivered orders.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt" id="vendors">
+    <div class="container">
+      <div class="section-head">
+        <div>
+          <span class="eyebrow">Live storefronts</span>
+          <h2>Stores already selling on GrowBusiness</h2>
+          <p class="sub">Each one runs on the same platform, with its own subdomain, branding and catalogue.</p>
+        </div>
+        <a class="btn btn-secondary" href="pages/vendors.html">Browse all stores</a>
+      </div>
+      <div class="vendor-grid" data-vendor-showcase>
+        <div class="skeleton sk-card" style="height:290px"></div>
+        <div class="skeleton sk-card" style="height:290px"></div>
+        <div class="skeleton sk-card" style="height:290px"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="dashboard-preview">
+    <div class="container">
+      <div class="grid g-2 align-center">
+        <div>
+          <span class="eyebrow">Vendor dashboard</span>
+          <h2 class="mt-4">Run the whole business from one screen</h2>
+          <p class="lede">Sales, orders, pending confirmations, customers, products, available balance and commission — all in one view, with charts that answer the questions you actually ask.</p>
+          <ul class="check-list mt-6">
+            <li><span class="tick"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><use href="#i-check"/></svg></span><span>Eight KPIs at the top, updated in real time</span></li>
+            <li><span class="tick"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><use href="#i-check"/></svg></span><span>Sales, orders and revenue charts for 7, 30 or 90 days</span></li>
+            <li><span class="tick"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><use href="#i-check"/></svg></span><span>Top products and a recent-orders queue you can act on</span></li>
+            <li><span class="tick"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><use href="#i-check"/></svg></span><span>Balance and payouts that are always calculated server side</span></li>
+          </ul>
+          <div class="row mt-8">
+            <a class="btn btn-primary btn-lg" href="register.html">Create your store</a>
+            <a class="btn btn-ghost btn-lg" href="pages/how-it-works.html">See how it works</a>
+          </div>
+        </div>
+        <div class="reveal">
+          <div class="frame" style="border-radius:var(--r-2xl);overflow:hidden;box-shadow:var(--sh-4);border:1px solid var(--line)">
+            <img src="assets/images/hero-dashboard.svg" alt="Vendor dashboard preview with KPI cards and sales chart" width="720" height="492" loading="lazy"/>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt" id="testimonials">
+    <div class="container">
+      <div class="section-head center">
+        <span class="eyebrow">Vendor stories</span>
+        <h2>What store owners say</h2>
+      </div>
+      <div class="quote-grid">
+        <article class="quote-card reveal">
+          <span class="stars"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><use href="#i-star"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><use href="#i-star"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><use href="#i-star"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><use href="#i-star"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><use href="#i-star"/></svg></span>
+          <p class="q">“I moved my electronics shop online in two days. Orders started coming in from other cities in the first week — something WhatsApp could never do for me.”</p>
+          <div class="who"><span class="avatar avatar-sm">R</span><div><div class="n">Rohit Verma</div><div class="r">TechMart · Bengaluru</div></div></div>
+        </article>
+        <article class="quote-card reveal">
+          <span class="stars"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><use href="#i-star"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><use href="#i-star"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><use href="#i-star"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><use href="#i-star"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><use href="#i-star"/></svg></span>
+          <p class="q">“The payout screen is the reason I stayed. I always know exactly what I earned, what commission was charged and when the money reaches my account.”</p>
+          <div class="who"><span class="avatar avatar-sm">P</span><div><div class="n">Priya Nair</div><div class="r">StyleHub · Kochi</div></div></div>
+        </article>
+        <article class="quote-card reveal">
+          <span class="stars"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><use href="#i-star"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><use href="#i-star"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><use href="#i-star"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><use href="#i-star"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><use href="#i-star"/></svg></span>
+          <p class="q">“My customers order vegetables at night and I pack in the morning. The pending orders list means nothing is missed, and COD settles automatically on delivery.”</p>
+          <div class="who"><span class="avatar avatar-sm">A</span><div><div class="n">Aman Sethi</div><div class="r">FreshKart · Jhajjar</div></div></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="faq">
+    <div class="container">
+      <div class="section-head center">
+        <span class="eyebrow">Questions</span>
+        <h2>The things vendors ask us first</h2>
+        <p class="sub">Full answers, including refunds and payouts, are in the FAQ.</p>
+      </div>
+      <div class="grid g-2">
+
+  <div class="card card-pad reveal">
+    <h3 class="h4 mb-4">Getting started</h3>
+    <div data-exclusive>
+
+        <div class="accordion">
+          <button type="button" class="acc-head" aria-expanded="false">How much does it cost to start selling?<svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><use href="#i-chevron-down"/></svg></button>
+          <div class="acc-body"><div class="acc-inner"><p>A one-time ₹1,000 refundable security deposit, plus a 5% platform commission on delivered orders. There is no monthly fee and no setup charge.</p></div></div>
+        </div>
+        <div class="accordion">
+          <button type="button" class="acc-head" aria-expanded="false">Is the ₹1,000 deposit really refundable?<svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><use href="#i-chevron-down"/></svg></button>
+          <div class="acc-body"><div class="acc-inner"><p>Yes. It is a security deposit, not a fee. It is returned in full when you close your store in good standing — no pending disputes, no unpaid dues.</p></div></div>
+        </div>
+        <div class="accordion">
+          <button type="button" class="acc-head" aria-expanded="false">How long does my store take to go live?<svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><use href="#i-chevron-down"/></svg></button>
+          <div class="acc-body"><div class="acc-inner"><p>Activation starts the moment your deposit is confirmed and finishes within 48 hours. You can add products and branding while you wait.</p></div></div>
+        </div>
+        <div class="accordion">
+          <button type="button" class="acc-head" aria-expanded="false">Do I need a website or technical knowledge?<svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><use href="#i-chevron-down"/></svg></button>
+          <div class="acc-body"><div class="acc-inner"><p>No. You get a storefront on your own subdomain, and everything is managed from a dashboard. If you can use WhatsApp, you can manage your store.</p></div></div>
+        </div>
+    </div>
+  </div>
+
+  <div class="card card-pad reveal">
+    <h3 class="h4 mb-4">Orders & payments</h3>
+    <div data-exclusive>
+
+        <div class="accordion">
+          <button type="button" class="acc-head" aria-expanded="false">Which payment methods can my customers use?<svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><use href="#i-chevron-down"/></svg></button>
+          <div class="acc-body"><div class="acc-inner"><p>UPI (Google Pay, PhonePe, Paytm), credit and debit cards, net banking, and cash on delivery. You can switch COD off for your store.</p></div></div>
+        </div>
+        <div class="accordion">
+          <button type="button" class="acc-head" aria-expanded="false">When do I receive my money?<svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><use href="#i-chevron-down"/></svg></button>
+          <div class="acc-body"><div class="acc-inner"><p>An order settles to your available balance the moment you mark it delivered. Withdrawals need a minimum of ₹500 and are usually paid within 1–2 working days.</p></div></div>
+        </div>
+        <div class="accordion">
+          <button type="button" class="acc-head" aria-expanded="false">How is the 5% commission calculated?<svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><use href="#i-chevron-down"/></svg></button>
+          <div class="acc-body"><div class="acc-inner"><p>On a ₹1,000 delivered order, the platform keeps ₹50 and you receive ₹950. Cancelled and refunded orders are never charged. The calculation always happens on the server.</p></div></div>
+        </div>
+        <div class="accordion">
+          <button type="button" class="acc-head" aria-expanded="false">Can I refund a customer?<svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><use href="#i-chevron-down"/></svg></button>
+          <div class="acc-body"><div class="acc-inner"><p>Yes. Open the order in your dashboard, choose Refund and add a reason. Stock is restored and the commission is reversed automatically.</p></div></div>
+        </div>
+    </div>
+  </div>
+      </div>
+      <div class="text-center mt-8">
+        <a class="btn btn-secondary" href="pages/faq.html">Read all 16 questions</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="cta-band reveal">
+        <span class="eyebrow" style="color:rgba(255,255,255,.8)">Start today</span>
+        <h2 class="mt-4">Your own online store, live in 48 hours</h2>
+        <p>Register, pay the ₹1,000 refundable security deposit, add your products, and start selling. No monthly fee — just 5% on delivered orders.</p>
+        <div class="row mt-8" style="gap:12px;flex-wrap:wrap">
+          <a class="btn btn-primary btn-lg" href="register.html">Start Your Business</a>
+          <a class="btn btn-secondary btn-lg" href="pages/pricing.html">See pricing</a>
+        </div>
+        <div class="cta-points">
+          <span><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><use href="#i-check"/></svg> Refundable deposit</span>
+          <span><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><use href="#i-check"/></svg> Your own subdomain</span>
+          <span><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><use href="#i-check"/></svg> UPI, cards &amp; COD</span>
+          <span><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><use href="#i-check"/></svg> Mobile-first storefront</span>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+<footer class="site-footer">
+  <div class="container container-wide">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a class="brand" href="index.html" aria-label="GrowBusiness Online home">
+          <span class="brand-mark"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 17.5 9.2 12l3.4 3.4L20 7.6" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/><path d="M15 7.6h5v5" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+          <span class="brand-text"><strong>GrowBusiness</strong><small>Online</small></span>
+        </a>
+        <p>Everything a small business needs to sell online: your own store, product and order management, payments and analytics — on your own subdomain.</p>
+        <div class="footer-social">
+          <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="3.5" y="3.5" width="17" height="17" rx="5" stroke="currentColor" stroke-width="1.9"/><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.9"/><circle cx="17.2" cy="6.8" r="1.2" fill="currentColor"/></svg></a>
+          <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M14.5 8.5h2.2V5.4h-2.6c-2.2 0-3.6 1.5-3.6 3.8v1.6H8.3v3.1h2.2V21h3.2v-7.1h2.3l.4-3.1h-2.7V9.6c0-.7.3-1.1.8-1.1Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg></a>
+          <a href="#" aria-label="YouTube"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="2.8" y="5.5" width="18.4" height="13" rx="4" stroke="currentColor" stroke-width="1.8"/><path d="m10.4 9.6 4.6 2.4-4.6 2.4V9.6Z" fill="currentColor"/></svg></a>
+          <a href="https://wa.me/919000000001" aria-label="WhatsApp"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M20 11.7a8 8 0 0 1-11.9 7L4 20l1.4-4A8 8 0 1 1 20 11.7Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M9.2 9.1c.3-.7.6-.7.9-.7h.6c.2 0 .5 0 .7.6l.6 1.4c.1.2 0 .4-.1.6l-.4.5c-.1.2-.2.3 0 .6.5.8 1.3 1.5 2.2 1.9.3.1.4.1.6-.1l.5-.6c.2-.2.3-.1.6 0l1.3.7c.3.2.5.3.5.5 0 .5-.3 1.2-1.3 1.5-.7.2-1.5.1-2.6-.3-1.9-.7-3.5-2.3-4.2-4.2-.4-1-.5-1.8-.3-2.4Z" fill="currentColor"/></svg></a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h6 class="upper">Platform</h6>
+        <a href="index.html">Home</a>
+        <a href="pages/features.html">Features</a>
+        <a href="pages/pricing.html">Pricing</a>
+        <a href="pages/how-it-works.html">How it works</a>
+        <a href="pages/vendors.html">Vendor stores</a>
+      </div>
+
+      <div class="footer-col">
+        <h6 class="upper">For vendors</h6>
+        <a href="register.html">Create your store</a>
+        <a href="login.html">Vendor login</a>
+        <a href="deposit.html">Security deposit</a>
+        <a href="activation.html">Store activation</a>
+        <a href="pages/vendor-agreement.html">Vendor agreement</a>
+      </div>
+
+      <div class="footer-col">
+        <h6 class="upper">For shoppers</h6>
+        <a href="pages/vendors.html">Browse stores</a>
+        <a href="vendor/orders.html">Track my order</a>
+        <a href="vendor/account.html">My account</a>
+        <a href="pages/faq.html">Help centre</a>
+        <a href="pages/contact.html">Contact us</a>
+      </div>
+
+      <div class="footer-col">
+        <h6 class="upper">Legal</h6>
+        <a href="pages/terms.html">Terms of service</a>
+        <a href="pages/privacy.html">Privacy policy</a>
+        <a href="pages/refund-policy.html">Refund policy</a>
+        <a href="pages/vendor-agreement.html">Vendor agreement</a>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <span>© <span data-year>2026</span> GrowBusiness Online. Built for Indian small businesses.</span>
+      <div class="links">
+        <span>Sector 14, Jhajjar, Haryana 124103</span>
+        <a href="mailto:support@growbusinessonline.com">support@growbusinessonline.com</a>
+        <a href="tel:+919000000001">+91 90000 00001</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<button type="button" class="back-top" data-back-top aria-label="Back to top">
+  <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 19V5m0 0-6 6m6-6 6 6" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</button>
+
+<script type="module" src="js/boot.js" data-page="home"></script>
+</body>
+</html>

@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width="600" height="600" role="img" aria-label="Product illustration">
+  <defs>
+    <linearGradient id="gbelt2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#F59E0B"/><stop offset="1" stop-color="#EF4444"/>
+    </linearGradient>
+    <radialGradient id="hbelt2" cx="0.28" cy="0.18" r="0.85">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.42"/><stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="600" height="600" fill="url(#gbelt2)"/>
+  <rect width="600" height="600" fill="url(#hbelt2)"/>
+  <circle cx="300" cy="300" r="176" fill="#ffffff" fill-opacity="0.14"/>
+  <circle cx="300" cy="300" r="228" fill="none" stroke="#ffffff" stroke-opacity="0.14" stroke-width="2"/>
+  <g transform="translate(156 156) scale(12)" fill="none" stroke="#ffffff" stroke-width="1.35" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.96"><rect x="1.8" y="9" width="20.4" height="6" rx="1.6"/><rect x="9" y="7.8" width="6" height="8.4" rx="1.6"/><path d="M12 9.6v4.8"/></g>
+  <path d="M0 470c120-42 210 26 330-6s170-64 270-30v166H0z" fill="#0b1020" fill-opacity="0.10"/>
+</svg>

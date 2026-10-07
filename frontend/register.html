@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"/>
+<title>Register Your Business — Create Your Online Store | GrowBusiness Online</title>
+<meta name="description" content="Create your vendor account, then pay the ₹1,000 refundable security deposit to activate your own online store."/>
+<meta name="author" content="GrowBusiness Online"/>
+<meta name="theme-color" content="#6D5EF6"/>
+<meta name="robots" content="noindex,follow"/>
+<link rel="canonical" href="https://www.growbusinessonline.com/register.html"/>
+
+<!-- Open Graph / Twitter -->
+<meta property="og:site_name" content="GrowBusiness Online"/>
+<meta property="og:type" content="website"/>
+<meta property="og:title" content="Register Your Business — Create Your Online Store | GrowBusiness Online"/>
+<meta property="og:description" content="Create your vendor account, then pay the ₹1,000 refundable security deposit to activate your own online store."/>
+<meta property="og:url" content="https://www.growbusinessonline.com/register.html"/>
+<meta property="og:image" content="https://www.growbusinessonline.com/assets/images/og-cover.svg"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:title" content="Register Your Business — Create Your Online Store | GrowBusiness Online"/>
+<meta name="twitter:description" content="Create your vendor account, then pay the ₹1,000 refundable security deposit to activate your own online store."/>
+<meta name="twitter:image" content="https://www.growbusinessonline.com/assets/images/og-cover.svg"/>
+
+<!-- Icons -->
+<link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml"/>
+<link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.svg"/>
+
+<!-- Fonts: Inter for UI, Sora for display. System fallbacks keep it fast offline. -->
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Sora:wght@600;700;800&display=swap"/>
+
+<!-- Styles -->
+<link rel="stylesheet" href="css/global.css"/>
+<link rel="stylesheet" href="css/components.css"/>
+<link rel="stylesheet" href="css/site.css"/>
+<link rel="stylesheet" href="css/storefront.css"/>
+<link rel="stylesheet" href="css/dashboard.css"/>
+<link rel="stylesheet" href="css/responsive.css"/>
+
+<!-- Paint the saved theme before first render so there is no flash -->
+<script>
+  (function () {
+    try {
+      var t = localStorage.getItem('gbo:theme');
+      if (!t) t = 'light';
+      if (t === 'auto') t = matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      document.documentElement.dataset.theme = t;
+    } catch (e) {}
+  })();
+</script>
+
+</head>
+<body class="auth-body">
+<a class="skip-link" href="#main">Skip to content</a>
+
+  <div class="auth-page">
+    <aside class="auth-side">
+      <a class="brand" href="index.html">
+        <span class="brand-mark"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><use href="#i-trending-up"/></svg></span>
+        <span class="brand-text"><strong>GrowBusiness</strong><small>Online</small></span>
+      </a>
+
+    <div>
+      <h2>Register your business</h2>
+      <p>Two short steps: create your account, then pay the ₹1,000 refundable security deposit to start activation.</p>
+      <ul class="auth-points">
+        <li><span class="ico"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><use href="#i-user-plus"/></svg></span><span>Step 1 — account created instantly</span></li>
+        <li><span class="ico"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><use href="#i-shield-check"/></svg></span><span>Step 2 — ₹1,000 refundable security deposit</span></li>
+        <li><span class="ico"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><use href="#i-clock"/></svg></span><span>Step 3 — 48 hour activation window</span></li>
+        <li><span class="ico"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><use href="#i-rocket"/></svg></span><span>Step 4 — your store goes live</span></li>
+      </ul>
+    </div>
+      <a class="auth-quote" href="index.html">
+        <p>← Back to the website</p>
+        <div class="who">Vendor registration — account, then deposit</div>
+      </a>
+    </aside>
+    <main class="auth-main" id="main">
+    <div class="auth-card wide">
+      <div class="auth-head">
+        <h1>Create your vendor account</h1>
+        <p>It takes about two minutes. You can add products while your store activates.</p>
+        <div class="progress progress-sm mt-6"><span data-step-progress style="width:50%"></span></div>
+      </div>
+
+      <form class="stack" data-register-form novalidate>
+        <div class="step" data-step="1">
+          <h2 class="h4 mb-4">1 · Your login details</h2>
+          <div class="form-grid">
+            <div class="field" data-field="name"><label class="label" for="rg-name">Full name</label><input class="input" id="rg-name" name="name" autocomplete="name" placeholder="Your full name" data-autofocus/><span class="error-text" data-error></span></div>
+            <div class="field" data-field="email"><label class="label" for="rg-email">Email</label><input class="input" id="rg-email" name="email" type="email" autocomplete="email" placeholder="you@example.com"/><span class="error-text" data-error></span></div>
+            <div class="field" data-field="phone"><label class="label" for="rg-phone">Mobile number</label><div class="input-group"><span class="prefix">+91</span><input class="input" id="rg-phone" name="phone" inputmode="numeric" maxlength="10" autocomplete="tel-national" placeholder="98765 43210"/></div><span class="error-text" data-error></span></div>
+            <div class="field" data-field="password">
+              <label class="label" for="rg-pw">Password</label>
+              <div class="input-group"><input class="input" id="rg-pw" name="password" type="password" autocomplete="new-password" placeholder="At least 8 characters"/><button type="button" class="suffix icon-btn ghost" data-toggle-password aria-label="Show password"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><use href="#i-eye"/></svg></button></div>
+              <div class="password-meter" data-password-meter><span class="bar"><span></span></span><span class="lbl">Too short</span></div>
+              <span class="error-text" data-error></span>
+            </div>
+            <div class="field" data-field="confirmPassword"><label class="label" for="rg-pw2">Confirm password</label><input class="input" id="rg-pw2" name="confirmPassword" type="password" autocomplete="new-password" placeholder="Repeat your password"/><span class="error-text" data-error></span></div>
+          </div>
+          <div class="row mt-6"><button type="button" class="btn btn-primary btn-lg" data-next-step>Continue <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><use href="#i-arrow-right"/></svg></button><a class="btn btn-ghost btn-lg" href="login.html">I already have an account</a></div>
+        </div>
+
+        <div class="step hidden" data-step="2">
+          <h2 class="h4 mb-4">2 · Your business details</h2>
+          <div class="form-grid">
+            <div class="field" data-field="businessName"><label class="label" for="rg-biz">Business name</label><input class="input" id="rg-biz" name="businessName" placeholder="e.g. Sharma Electronics"/><span class="error-text" data-error></span></div>
+            <div class="field" data-field="businessType"><label class="label" for="rg-type">Business type</label><div class="select-wrap"><select class="select" id="rg-type" name="businessType"><option value="">Select business type</option></select><svg class="sel" viewBox="0 0 24 24" fill="none" aria-hidden="true"><use href="#i-chevron-down"/></svg></div><span class="error-text" data-error></span></div>
+            <div class="field span-2" data-field="address"><label class="label" for="rg-addr">Address</label><textarea class="textarea" id="rg-addr" name="address" rows="2" placeholder="Shop number, street, landmark"></textarea><span class="error-text" data-error></span></div>
+            <div class="field" data-field="city"><label class="label" for="rg-city">City</label><input class="input" id="rg-city" name="city" placeholder="City"/><span class="error-text" data-error></span></div>
+            <div class="field" data-field="state"><label class="label" for="rg-state">State</label><input class="input" id="rg-state" name="state" placeholder="State"/><span class="error-text" data-error></span></div>
+            <div class="field" data-field="country"><label class="label" for="rg-country">Country</label><input class="input" id="rg-country" name="country" value="India"/><span class="error-text" data-error></span></div>
+            <div class="field" data-field="pincode"><label class="label" for="rg-pin">Pincode</label><input class="input" id="rg-pin" name="pincode" inputmode="numeric" maxlength="6" placeholder="6 digit pincode"/><span class="error-text" data-error></span></div>
+          </div>
+          <label class="check mt-6" data-field="agree"><input type="checkbox" name="agree"/><span class="box"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><use href="#i-check"/></svg></span><span class="text">I agree to the <a href="pages/terms.html">Terms of Service</a>, <a href="pages/privacy.html">Privacy Policy</a> and <a href="pages/vendor-agreement.html">Vendor Agreement</a>.</span></label>
+          <span class="error-text" data-error></span>
+          <div class="alert alert-brand mt-6"><svg class="a-icon" viewBox="0 0 24 24" fill="none" aria-hidden="true"><use href="#i-info"/></svg><div class="a-body"><strong>What happens next</strong> Your account is created, then you pay the ₹1,000 refundable security deposit. Activation starts immediately after the gateway confirms the payment.</div></div>
+          <div class="row mt-6"><button type="button" class="btn btn-ghost btn-lg" data-prev-step><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><use href="#i-arrow-left"/></svg> Back</button><button type="submit" class="btn btn-primary btn-lg" data-label="Creating account">Create account &amp; continue</button></div>
+        </div>
+      </form>
+      <div data-demo-accounts></div>
+    </div></main>
+  </div>
+<script type="module" src="js/boot.js" data-page="register"></script>
+</body>
+</html>

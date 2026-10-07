@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"/>
+<title>₹1,000 Security Deposit | GrowBusiness Online</title>
+<meta name="description" content="Pay the one-time ₹1,000 refundable security deposit to activate your store. Only the payment gateway can confirm a payment."/>
+<meta name="author" content="GrowBusiness Online"/>
+<meta name="theme-color" content="#6D5EF6"/>
+<meta name="robots" content="noindex,nofollow"/>
+<link rel="canonical" href="https://www.growbusinessonline.com/deposit.html"/>
+
+<!-- Open Graph / Twitter -->
+<meta property="og:site_name" content="GrowBusiness Online"/>
+<meta property="og:type" content="website"/>
+<meta property="og:title" content="₹1,000 Security Deposit | GrowBusiness Online"/>
+<meta property="og:description" content="Pay the one-time ₹1,000 refundable security deposit to activate your store. Only the payment gateway can confirm a payment."/>
+<meta property="og:url" content="https://www.growbusinessonline.com/deposit.html"/>
+<meta property="og:image" content="https://www.growbusinessonline.com/assets/images/og-cover.svg"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:title" content="₹1,000 Security Deposit | GrowBusiness Online"/>
+<meta name="twitter:description" content="Pay the one-time ₹1,000 refundable security deposit to activate your store. Only the payment gateway can confirm a payment."/>
+<meta name="twitter:image" content="https://www.growbusinessonline.com/assets/images/og-cover.svg"/>
+
+<!-- Icons -->
+<link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml"/>
+<link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.svg"/>
+
+<!-- Fonts: Inter for UI, Sora for display. System fallbacks keep it fast offline. -->
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Sora:wght@600;700;800&display=swap"/>
+
+<!-- Styles -->
+<link rel="stylesheet" href="css/global.css"/>
+<link rel="stylesheet" href="css/components.css"/>
+<link rel="stylesheet" href="css/site.css"/>
+<link rel="stylesheet" href="css/storefront.css"/>
+<link rel="stylesheet" href="css/dashboard.css"/>
+<link rel="stylesheet" href="css/responsive.css"/>
+
+<!-- Paint the saved theme before first render so there is no flash -->
+<script>
+  (function () {
+    try {
+      var t = localStorage.getItem('gbo:theme');
+      if (!t) t = 'light';
+      if (t === 'auto') t = matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      document.documentElement.dataset.theme = t;
+    } catch (e) {}
+  })();
+</script>
+
+</head>
+<body class="pay-body">
+<a class="skip-link" href="#main">Skip to content</a>
+
+  <main class="pay-page" id="main">
+    <div style="width:min(560px,100%)">
+      <a class="brand mb-6" href="index.html" style="justify-content:center">
+        <span class="brand-mark"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><use href="#i-trending-up"/></svg></span>
+        <span class="brand-text"><strong>GrowBusiness</strong><small>Online</small></span>
+      </a>
+      <div data-deposit-host>
+        <div class="pay-card"><div class="pay-head"><div class="skeleton sk-title" style="margin:0 auto 14px"></div><div class="skeleton" style="height:52px;width:60%;margin:0 auto;border-radius:12px"></div></div><div class="pay-body"><div class="skeleton sk-row"></div><div class="skeleton sk-row"></div><div class="skeleton sk-btn"></div></div></div>
+      </div>
+      <p class="hint text-center mt-6">Step 2 of 4 · Need help? <a href="pages/contact.html">Contact support</a></p>
+    </div>
+  </main>
+<script type="module" src="js/boot.js" data-page="deposit"></script>
+</body>
+</html>
