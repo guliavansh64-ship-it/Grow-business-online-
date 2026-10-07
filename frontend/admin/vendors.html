@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"/>
+<title>Stores · Platform Console | GrowBusiness Online</title>
+<meta name="description" content="Approve, suspend and configure every store on the platform."/>
+<meta name="author" content="GrowBusiness Online"/>
+<meta name="theme-color" content="#6D5EF6"/>
+<meta name="robots" content="noindex,nofollow"/>
+<link rel="canonical" href="https://www.growbusinessonline.com/admin/"/>
+
+<!-- Open Graph / Twitter -->
+<meta property="og:site_name" content="GrowBusiness Online"/>
+<meta property="og:type" content="website"/>
+<meta property="og:title" content="Stores · Platform Console | GrowBusiness Online"/>
+<meta property="og:description" content="Approve, suspend and configure every store on the platform."/>
+<meta property="og:url" content="https://www.growbusinessonline.com/admin/"/>
+<meta property="og:image" content="https://www.growbusinessonline.com/assets/images/og-cover.svg"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:title" content="Stores · Platform Console | GrowBusiness Online"/>
+<meta name="twitter:description" content="Approve, suspend and configure every store on the platform."/>
+<meta name="twitter:image" content="https://www.growbusinessonline.com/assets/images/og-cover.svg"/>
+
+<!-- Icons -->
+<link rel="icon" href="../assets/icons/favicon.svg" type="image/svg+xml"/>
+<link rel="apple-touch-icon" href="../assets/icons/apple-touch-icon.svg"/>
+
+<!-- Fonts: Inter for UI, Sora for display. System fallbacks keep it fast offline. -->
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Sora:wght@600;700;800&display=swap"/>
+
+<!-- Styles -->
+<link rel="stylesheet" href="../css/global.css"/>
+<link rel="stylesheet" href="../css/components.css"/>
+<link rel="stylesheet" href="../css/site.css"/>
+<link rel="stylesheet" href="../css/storefront.css"/>
+<link rel="stylesheet" href="../css/dashboard.css"/>
+<link rel="stylesheet" href="../css/responsive.css"/>
+
+<!-- Paint the saved theme before first render so there is no flash -->
+<script>
+  (function () {
+    try {
+      var t = localStorage.getItem('gbo:theme');
+      if (!t) t = 'light';
+      if (t === 'auto') t = matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      document.documentElement.dataset.theme = t;
+    } catch (e) {}
+  })();
+</script>
+<script>document.documentElement.dataset.console="true";</script>
+</head>
+<body class="">
+<a class="skip-link" href="#main">Skip to content</a>
+<!-- Vendor console shell.
+     mountDashboardChrome() fills [data-app-shell] with the sidebar + topbar and
+     moves everything inside <main> into the scroll area, so page modules only
+     have to render their own content. -->
+<div data-app-shell></div>
+
+<main id="main" class="app-content">
+  <noscript>
+    <div class="container section">
+      <h1>Stores · Platform Console | GrowBusiness Online</h1>
+      <p class="lede">Approve, suspend and configure every store on the platform.</p>
+      <p class="muted">The vendor console needs JavaScript to load your orders, products and balances.</p>
+    </div>
+  </noscript>
+  <div class="container section">
+    <div class="skeleton sk-card" style="height:96px"></div>
+    <div class="skeleton sk-card mt-4" style="height:280px"></div>
+    <div class="skeleton sk-card mt-4" style="height:200px"></div>
+  </div>
+</main>
+
+<script type="module" src="../js/boot.js" data-page="console-vendors"></script>
+</body>
+</html>

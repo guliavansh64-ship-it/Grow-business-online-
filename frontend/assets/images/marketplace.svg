@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 480" width="1200" height="480" role="img" aria-label="Vendor marketplace">
+  <defs><linearGradient id="mbg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#1E1B4B"/><stop offset="0.5" stop-color="#4F46E5"/><stop offset="1" stop-color="#0EA5E9"/></linearGradient></defs>
+  <rect width="1200" height="480" fill="url(#mbg)"/>
+  <g fill="none" stroke="#ffffff" stroke-opacity="0.18" stroke-width="2">
+    <circle cx="980" cy="120" r="120"/><circle cx="980" cy="120" r="190"/><circle cx="980" cy="120" r="260"/>
+    <path d="M-20 360c200-70 320 40 540-10s320-100 560-30"/>
+  </g>
+  <g fill="#ffffff" fill-opacity="0.12">
+    <rect x="80" y="300" width="110" height="110" rx="24"/><rect x="220" y="250" width="80" height="160" rx="20"/>
+    <rect x="330" y="330" width="130" height="80" rx="20"/><rect x="490" y="280" width="96" height="130" rx="22"/>
+  </g>
+</svg>

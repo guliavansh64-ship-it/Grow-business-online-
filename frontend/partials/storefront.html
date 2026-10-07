@@ -1,0 +1,27 @@
+<!-- Storefront shell.
+     The header, hero, products and footer are injected from the vendor record
+     by js/layout.js, so this ONE file serves every subdomain (spec §4, §41).
+     A crawler still sees real HTML: the page title, description and a
+     no-JS fallback are rendered server-side by the generator. -->
+<div data-store-header><!-- injected: vendor header + category strip --></div>
+
+<main id="main" data-store-host>
+  <noscript>
+    <div class="container section">
+      <h1>{{noscriptTitle}}</h1>
+      <p class="lede">{{description}}</p>
+      <p class="muted">This store needs JavaScript to load live products, prices and stock. Please enable JavaScript, or call the store directly.</p>
+    </div>
+  </noscript>
+  <div class="container section">
+    <div class="skeleton sk-card" style="height:120px"></div>
+    <div class="product-grid mt-6">
+      <div class="skeleton sk-card" style="height:280px"></div>
+      <div class="skeleton sk-card" style="height:280px"></div>
+      <div class="skeleton sk-card" style="height:280px"></div>
+      <div class="skeleton sk-card" style="height:280px"></div>
+    </div>
+  </div>
+</main>
+
+<div data-store-footer><!-- injected: vendor footer --></div>

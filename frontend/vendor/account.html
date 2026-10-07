@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"/>
+<title>My Account — Profile, Addresses &amp; Notifications | GrowBusiness Online</title>
+<meta name="description" content="Manage your profile, saved addresses, notifications and wishlist."/>
+<meta name="author" content="GrowBusiness Online"/>
+<meta name="theme-color" content="#6D5EF6"/>
+<meta name="robots" content="noindex,nofollow"/>
+<link rel="canonical" href="https://www.growbusinessonline.com/vendor/account.html"/>
+
+<!-- Open Graph / Twitter -->
+<meta property="og:site_name" content="GrowBusiness Online"/>
+<meta property="og:type" content="website"/>
+<meta property="og:title" content="My Account — Profile, Addresses &amp; Notifications | GrowBusiness Online"/>
+<meta property="og:description" content="Manage your profile, saved addresses, notifications and wishlist."/>
+<meta property="og:url" content="https://www.growbusinessonline.com/vendor/account.html"/>
+<meta property="og:image" content="https://www.growbusinessonline.com/assets/images/og-cover.svg"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:title" content="My Account — Profile, Addresses &amp; Notifications | GrowBusiness Online"/>
+<meta name="twitter:description" content="Manage your profile, saved addresses, notifications and wishlist."/>
+<meta name="twitter:image" content="https://www.growbusinessonline.com/assets/images/og-cover.svg"/>
+
+<!-- Icons -->
+<link rel="icon" href="../assets/icons/favicon.svg" type="image/svg+xml"/>
+<link rel="apple-touch-icon" href="../assets/icons/apple-touch-icon.svg"/>
+
+<!-- Fonts: Inter for UI, Sora for display. System fallbacks keep it fast offline. -->
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Sora:wght@600;700;800&display=swap"/>
+
+<!-- Styles -->
+<link rel="stylesheet" href="../css/global.css"/>
+<link rel="stylesheet" href="../css/components.css"/>
+<link rel="stylesheet" href="../css/site.css"/>
+<link rel="stylesheet" href="../css/storefront.css"/>
+<link rel="stylesheet" href="../css/dashboard.css"/>
+<link rel="stylesheet" href="../css/responsive.css"/>
+
+<!-- Paint the saved theme before first render so there is no flash -->
+<script>
+  (function () {
+    try {
+      var t = localStorage.getItem('gbo:theme');
+      if (!t) t = 'light';
+      if (t === 'auto') t = matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      document.documentElement.dataset.theme = t;
+    } catch (e) {}
+  })();
+</script>
+
+</head>
+<body class="">
+<a class="skip-link" href="#main">Skip to content</a>
+<!-- Storefront shell.
+     The header, hero, products and footer are injected from the vendor record
+     by js/layout.js, so this ONE file serves every subdomain (spec §4, §41).
+     A crawler still sees real HTML: the page title, description and a
+     no-JS fallback are rendered server-side by the generator. -->
+<div data-store-header><!-- injected: vendor header + category strip --></div>
+
+<main id="main" data-store-host>
+  <noscript>
+    <div class="container section">
+      <h1>My Account — Profile, Addresses &amp; Notifications | GrowBusiness Online</h1>
+      <p class="lede">Manage your profile, saved addresses, notifications and wishlist.</p>
+      <p class="muted">This store needs JavaScript to load live products, prices and stock. Please enable JavaScript, or call the store directly.</p>
+    </div>
+  </noscript>
+  <div class="container section">
+    <div class="skeleton sk-card" style="height:120px"></div>
+    <div class="product-grid mt-6">
+      <div class="skeleton sk-card" style="height:280px"></div>
+      <div class="skeleton sk-card" style="height:280px"></div>
+      <div class="skeleton sk-card" style="height:280px"></div>
+      <div class="skeleton sk-card" style="height:280px"></div>
+    </div>
+  </div>
+</main>
+
+<div data-store-footer><!-- injected: vendor footer --></div>
+
+<script type="module" src="../js/boot.js" data-page="store-account"></script>
+</body>
+</html>
